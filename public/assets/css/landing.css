@@ -1,0 +1,238 @@
+.navbar-custom {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* Custom Navbar Styling */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;...");
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.one-page {
+    height: 100vh;
+}
+
+.titan-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.titan-title-size-1 {
+    font-size: 50px;
+}
+
+.titan-title-size-4 {
+    font-size: 30px;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #343a40, #007bff);
+}
+
+.home-full-height {
+    height: 100vh;
+}
+
+.section-scroll {
+    cursor: pointer;
+}
+/* Custom CSS for the Landing Page */
+
+/* Button Styling */
+.btn-border-w {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-border-w:hover {
+    color: #333;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Section Styling */
+.titan-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.titan-caption .titan-title-size-1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.titan-caption .titan-title-size-4 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.home-section {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .titan-caption .titan-title-size-1 {
+        font-size: 32px;
+    }
+
+    .titan-caption .titan-title-size-4 {
+        font-size: 24px;
+    }
+
+    .btn-border-w {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Custom CSS for Layanan Kami Section */
+
+/* Box Styling */
+.box-step {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.box-step:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-step {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.box-step h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box-step p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-step {
+        margin-bottom: 30px;
+    }
+
+    .icon-step {
+        font-size: 30px;
+    }
+
+    .box-step h4 {
+        font-size: 16px;
+    }
+}
+
+/* Custom CSS for Profil Section */
+#profil {
+    background-color: #3976af; /* Warna gelap (dark) */
+}
+
+#profil h2, #profil h3 {
+    color: #ffffff; /* Warna teks putih untuk heading */
+}
+
+#profil p {
+    color: #d3d3d3; /* Warna teks lebih terang untuk paragraf */
+}
+
+/* Member Box Styling */
+.box-member {
+    background-color: #ffffff; /* Warna latar belakang kotak anggota */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.box-member:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-member img {
+    border-radius: 50%;
+    width: 100px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: 100px; /* Atur ukuran gambar sesuai kebutuhan */
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+.box-member h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+#kontak {
+    border-top: 5px solid #f7f7f7; /* Menambahkan garis atas untuk pemisah */
+}
+
+.card {
+    border: none; /* Menghilangkan border default */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#kontak h4 {
+    font-weight: bold; /* Membuat font lebih tebal untuk heading */
+}
