@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DataRWController;
+use App\Http\Controllers\DataWargaController;
+use App\Http\Controllers\DataRTController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +40,12 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
 // Route untuk dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+
+// Route untuk halaman Data RW
+Route::get('/admin/datarw', [DataRWController::class, 'index'])->name('admin.datarw.index');
+
+// Route untuk halaman Data RT
+Route::get('/admin/data_rt', [DataRTController::class, 'index'])->name('admin.data_rt.index');
+
+// Route untuk Data Warga
+Route::get('/data-warga', [DataWargaController::class, 'index'])->name('data-warga.index');

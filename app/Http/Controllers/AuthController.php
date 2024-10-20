@@ -23,14 +23,17 @@ class AuthController extends Controller
             'nik' => 'required|string|size:16|unique:users',
             'password' => 'required|string|min:8',
             'role_id' => 'required|integer',
+            'rt_id' => 'required|integer', // Validasi untuk rt_id
         ]);
-
+        
         User::create([
             'name' => $request->name,
             'nik' => $request->nik,
             'password' => Hash::make($request->password),
             'role_id' => $request->role_id,
+            'rt_id' => $request->rt_id, // Tambahkan rt_id
         ]);
+        
 
         return redirect()->route('login')->with('success', 'Registration successful, please login.');
     }

@@ -1,19 +1,26 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <i class="mdi mdi-view-dashboard menu-icon"></i>
-                <span class="menu-title">Dashboard Kelurahan</span>
+                <span class="menu-title">Dashboard</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="{{ route('admin.datarw.index') }}">
                 <i class="mdi mdi-account-group menu-icon"></i>
                 <span class="menu-title">Data RW</span>
             </a>
         </li>
+        
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="{{ route('admin.data_rt.index') }}">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span class="menu-title">Data rt</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('data-warga.index') }}">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span class="menu-title">Data Warga</span>
             </a>

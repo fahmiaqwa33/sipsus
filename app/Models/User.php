@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable; // Tambahkan ini jika menggunakan notifikasi
-use Illuminate\Contracts\Auth\MustVerifyEmail; // Tambahkan ini jika menggunakan verifikasi email
-use Illuminate\Foundation\Auth\User as Authenticatable; // Gunakan kelas ini untuk autentikasi
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
@@ -18,6 +18,7 @@ class User extends Authenticatable
         'nik',
         'password',
         'role_id',
+        'rt_id', // Tambahkan kolom rt_id di sini
     ];
 
     // Jika menggunakan hashing untuk password
@@ -25,6 +26,12 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    // Relasi ke RT
+    public function rt()
+    {
+        return $this->belongsTo(RT::class);
+    }
 
     // Tambahkan metode lain jika perlu
 }
