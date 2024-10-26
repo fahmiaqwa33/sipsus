@@ -9,6 +9,14 @@ class DataRW extends Model
 {
     use HasFactory;
 
-    protected $table = 'data_rw'; // Pastikan nama tabel sesuai
-    protected $fillable = ['nama_rw']; // Sesuaikan dengan kolom yang ada di tabel
+    // Tentukan nama tabel secara eksplisit jika nama tabel di database berbeda dari plural model
+    protected $table = 'data_rw';
+
+    // Atribut yang diizinkan untuk diisi melalui mass assignment
+    protected $fillable = [
+        'nama_rw',
+        'rw',
+        'no_hp',
+        'email',
+    ];
 }

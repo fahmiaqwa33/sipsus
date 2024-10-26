@@ -9,14 +9,14 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.datarw.index') }}">
                 <i class="mdi mdi-account-group menu-icon"></i>
-                <span class="menu-title">Data RW</span>
+                <span class="menu-title">Data Ketua RW</span>
             </a>
         </li>
         
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.data_rt.index') }}">
                 <i class="mdi mdi-account-multiple menu-icon"></i>
-                <span class="menu-title">Data rt</span>
+                <span class="menu-title">Data Ketua RT</span>
             </a>
         </li>
         <li class="nav-item">
@@ -26,25 +26,25 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-file-check menu-icon"></i>
                 <span class="menu-title">Verifikasi Surat</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-file-chart menu-icon"></i>
                 <span class="menu-title">Laporan Kelurahan</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="{{ route('admin.informasi.index') }}">
                 <i class="mdi mdi-information-outline menu-icon"></i>
                 <span class="menu-title">Informasi Kelurahan</span>
             </a>
-        </li>
+        </li>        
         <li class="nav-item">
-            <a class="nav-link" href="------------">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-cog menu-icon"></i>
                 <span class="menu-title">Setting Akun</span>
             </a>

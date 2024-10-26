@@ -21,7 +21,6 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset('src/assets/css/vertical-layout-light/style.css') }}">
     <link rel="stylesheet" href="{{ asset('src/assets/css/style.css') }}">
-  
     
     
     <!-- Custom Styles -->

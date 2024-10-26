@@ -25,20 +25,7 @@
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
-        <!---surat----->
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#data-user" aria-expanded="false" aria-controls="data-user">
-                <i class="mdi mdi-email-outline menu-icon"></i>
-                <span class="menu-title">Surat</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="data-user">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="">surat masuk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">surat terverivikasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">surat ditolak</a></li>
-                </ul>
-        
+
         <!-- Data User -->
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#data-user" aria-expanded="false" aria-controls="data-user">
@@ -48,12 +35,27 @@
             </a>
             <div class="collapse" id="data-user">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="">Admin RW</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Admin RT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Masyarakat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">warga</a></li>
                 </ul>
             </div>
         </li>
+        
+        <!---surat----->
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#data-surat" aria-expanded="false" aria-controls="data-user">
+                <i class="mdi mdi-email-outline menu-icon"></i>
+                <span class="menu-title">Surat</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="data-surat">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="">surat masuk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">surat terverivikasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">surat ditolak</a></li>
+                </ul>
+        
+
 
         <!-- Informasi -->
         <li class="nav-item">

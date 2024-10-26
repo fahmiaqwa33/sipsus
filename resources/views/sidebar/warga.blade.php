@@ -2,7 +2,7 @@
     <ul class="nav">
         <!-- Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="/">
                 <i class="mdi mdi-home menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
@@ -10,7 +10,7 @@
         
         <!-- Ajukan Surat -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-send menu-icon"></i>
                 <span class="menu-title">Ajukan Surat</span>
             </a>
@@ -18,7 +18,7 @@
         
         <!-- Status Pengajuan -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-file-check menu-icon"></i>
                 <span class="menu-title">Status Pengajuan</span>
             </a>
@@ -26,7 +26,7 @@
         
         <!-- Informasi -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-information-outline menu-icon"></i>
                 <span class="menu-title">Informasi</span>
             </a>
@@ -34,7 +34,7 @@
         
         <!-- Profil Saya -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-account-circle menu-icon"></i>
                 <span class="menu-title">Profil Saya</span>
             </a>
@@ -42,7 +42,7 @@
         
         <!-- Bantuan -->
         <li class="nav-item">
-            <a class="nav-link" href="......">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-help-circle menu-icon"></i>
                 <span class="menu-title">Bantuan</span>
             </a>

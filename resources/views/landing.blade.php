@@ -29,10 +29,16 @@
                         <a class="nav-link" href="#Pelayanan">Pelayanan</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#informasi">Informasi</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#Profil">Profil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm" href="{{ route('login') }}" style="border: none;">Login</a>
                     </li>
                 </ul>
             </div>
@@ -91,6 +97,15 @@
                         <p>Tunggu hingga surat diverifikasi dan disetujui oleh petugas.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="informasi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Informasi Terkini</h2>
+            <div class="row">
+
             </div>
         </div>
     </section>
