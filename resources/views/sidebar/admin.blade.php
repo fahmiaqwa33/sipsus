@@ -24,13 +24,25 @@
                 <i class="mdi mdi-account-multiple menu-icon"></i>
                 <span class="menu-title">Data Warga</span>
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="mdi mdi-file-check menu-icon"></i>
-                <span class="menu-title">Verifikasi Surat</span>
-            </a>
-        </li>
+       <!---surat----->
+       <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#data-surat" aria-expanded="false" aria-controls="data-user">
+            <i class="mdi mdi-email-outline menu-icon"></i>
+            <span class="menu-title">Surat</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="data-surat">
+            <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('surat.masuk.admin.index3') }}">Surat Masuk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Surat Terverifikasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Surat Ditolak</a>
+                </li>
+            </ul>
         <li class="nav-item">
             <a class="nav-link" href="#">
                 <i class="mdi mdi-file-chart menu-icon"></i>

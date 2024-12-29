@@ -1,12 +1,30 @@
-$(document).ready(function(){
-    // Smooth scroll for section links
-    $('a.section-scroll').on('click', function(e) {
-        var target = $(this.hash);
-        if (target.length) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: target.offset().top - 60 // Adjust offset for fixed navbar
-            }, 1000);
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Fade-in effect for sections
+const sections = document.querySelectorAll('.fade-in');
+const options = {
+    root: null,
+    threshold: 0.1,
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
         }
     });
+}, options);
+
+sections.forEach(section => {
+    observer.observe(section);
 });

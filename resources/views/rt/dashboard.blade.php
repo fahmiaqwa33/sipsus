@@ -1,6 +1,6 @@
 @extends('layouts.rtapp')
 
-@section('title', 'rw Dashboard')
+@section('title', 'rt Dashboard')
 
 @section('content')
 

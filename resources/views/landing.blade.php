@@ -1,235 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - SISPUS</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SISPUS - Sistem Informasi Pengajuan Surat</title>
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ ('assets/img/logo_wsb.png') }}">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/landing.css') }}">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- Link FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">SISPUS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Pelayanan">Pelayanan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#informasi">Informasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Profil">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Kontak">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary btn-sm" href="{{ route('login') }}" style="border: none;">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="home-section home-full-height bg-dark bg-gradient" id="home" data-background="assets/images/section-10.jpg">
-        <div class="titan-caption">
-            <div class="caption-content">
-                <div class="font-alt mb-30 titan-title-size-4" >ꦯꦸꦓꦺꦁꦫꦮꦸꦃ</div>
-                <div class="font-alt mb-40 titan-title-size-1" style="font-family: 'Bebas Neue' sans-serif;" >SELAMAT DATANG</div>
-                <div class="font-alt mb-40 titan-title-size-5" style="font-family: 'Bebas Neue' sans-serif;" >DI WEBSITE KELURAHAN SELOMERTO</div>
-               
-                <a class="section-scroll btn btn-border-w btn-round" href="{{ route('login') }}">Login</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section id="Pelayanan" class="bg-light pt-5 pb-5">
-        <div class="container">
-            <h2 class="text-center">Layanan Kami</h2>
-            <p class="text-center">Pengajuan surat secara online dengan tata cara sebagai berikut:</p>
     
-            <div class="row text-center mt-4">
-                <!-- Tahap 1: Login -->
-                <div class="col-md-4">
-                    <div class="box-step">
-                        <div class="icon-step">
-                            <i class="fas fa-sign-in-alt"></i>
-                        </div>
-                        <h4>Tahap 1: Login</h4>
-                        <p>Masuk ke sistem dengan menggunakan NIK dan password.</p>
-                    </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Optional: Font Awesome -->
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="navbarResponsive">
+            <div class="container">
+                <a class="navbar-brand" href="#">SISPUS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Pelayanan">Pelayanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#informasi">Informasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Profil">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Kontak">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light btn-sm" href="{{ route('login') }}" style="border: none;">Login</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
     
-                <!-- Tahap 2: Mengisi Form -->
-                <div class="col-md-4">
-                    <div class="box-step">
-                        <div class="icon-step">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <h4>Tahap 2: Mengisi Form</h4>
-                        <p>Isi form pengajuan surat dengan data yang lengkap dan benar.</p>
-                    </div>
-                </div>
-    
-                <!-- Tahap 3: Menunggu Verifikasi -->
-                <div class="col-md-4">
-                    <div class="box-step">
-                        <div class="icon-step">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h4>Tahap 3: Menunggu Verifikasi</h4>
-                        <p>Tunggu hingga surat diverifikasi dan disetujui oleh petugas.</p>
-                    </div>
+        <!-- Hero Section -->
+        <div class="container-fluid bg-primary text-white py-5" id="home" style="height: 100vh; background: url('path-to-image.jpg') no-repeat center center/cover;">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-4 mb-3">ꦯꦸꦓꦺꦁꦫꦮꦸꦃ</h2>
+                    <h1 class="fw-bold">SELAMAT DATANG</h1>
+                    <h3 class="mb-4">DI WEBSITE KELURAHAN SELOMERTO</h3>
+                    <a class="btn btn-light btn-lg" href="{{ route('login') }}">Login</a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="informasi" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Informasi Terkini</h2>
-            <div class="row">
+        <!-- Section Pelayanan -->
+        <section id="Pelayanan" class="py-5 bg-light">
+            <div class="container">
+                <!-- Judul Section -->
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h2 class="display-5 fw-bold">Pelayanan</h2>
+                        <p class="text-muted">Cara Mengajukan Surat di Kelurahan Selomerto</p>
+                        <hr class="w-25 mx-auto">
+                    </div>
+                </div>
 
-            </div>
-        </div>
-    </section>
+                <!-- Kotak-Kotak Langkah-Langkah Mengajukan Surat -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-sign-in-alt fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold">1. Login ke Sistem</h4>
+                            <p class="text-muted">Masuk ke akun Anda dengan menggunakan NIK dan password Anda.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-bars fa-3x text-success"></i>
+                            </div>
+                            <h4 class="fw-bold">2. Pilih Menu "Ajukan Surat"</h4>
+                            <p class="text-muted">Klik menu pengajuan surat di dashboard Anda.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-edit fa-3x text-warning"></i>
+                            </div>
+                            <h4 class="fw-bold">3. & PILIH SURAT & Isi Formulir</h4>
+                            <p class="text-muted">Masukkan data yang diperlukan seperti nama, alamat, dan alasan pengajuan surat. Nama dan NIK akan terisi otomatis.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="Profil" class="bg-dark text-white pt-5 pb-5">
-        <div class="container">
-            <h2 class="text-center">Profil Kelurahan Selomerto</h2>
-            <p class="text-center">
-                Kelurahan Selomerto adalah sebuah kelurahan yang berada di Kabupaten Wonosobo. 
-                Instansi ini bertujuan untuk memberikan pelayanan publik yang terbaik bagi masyarakat.
-            </p>
-    
-            <!-- Struktur Organisasi -->
-            <h3 class="text-center mt-4">Struktur Organisasi</h3>
-            <div class="row mt-4">
-                <!-- Anggota 1 -->
-                <div class="col-md-3">
-                    <div class="box-member">
-                        <img src="{{ asset('assets/img/anis_b.jpg') }}" alt="Anggota 1" class="img-fluid">
-                        <h4>H.Anis B</h4>
-                    </div>
-                </div>
-    
-                <!-- Anggota 2 -->
-                <div class="col-md-3">
-                    <div class="box-member">
-                        <img src="{{ asset('assets/img/gibran.jpeg') }}" alt="Anggota 2" class="img-fluid">
-                        <h4>gibran S.ff</h4>
-                    </div>
-                </div>
-    
-                <!-- Anggota 3 -->
-                <div class="col-md-3">
-                    <div class="box-member">
-                        <img src="{{ asset('assets/img/eri_pras.jpg') }}" alt="Anggota 3" class="img-fluid">
-                        <h4>eripras .S.Pg</h4>
-                    </div>
-                </div>
-    
-                <!-- Anggota 4 -->
-                <div class="col-md-3">
-                    <div class="box-member">
-                        <img src="{{ asset('assets/img/lurah.png') }}" alt="Anggota 4" class="img-fluid">
-                        <h4>pak kaji</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="Kontak" class="bg-loght text-dark pt-5 pb-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Kontak Kami</h2>
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="card bg-light text-dark mb-4">
-                        <div class="card-header">
-                            <h4>Email</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>example@example.com</p>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-paper-plane fa-3x text-info"></i>
+                            </div>
+                            <h4 class="fw-bold">4. Kirim Pengajuan</h4>
+                            <p class="text-muted">Klik tombol "Kirim" untuk mengajukan surat Anda. Anda akan menerima notifikasi setelah pengajuan berhasil.</p>
                         </div>
                     </div>
-    
-                    <div class="card bg-light text-dark mb-4">
-                        <div class="card-header">
-                            <h4>No Telepon</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>0286-3212-81</p>
-                        </div>
-                    </div>
-    
-                    <div class="card bg-light text-dark mb-4">
-                        <div class="card-header">
-                            <h4>Alamat</h4>
-                        </div>
-                        <div class="card-body">
-                            <p>
-                                Jl. Banyumas KM.15, Jagalan, Selomerto,<br>
-                                Kec. Selomerto, Kabupaten Wonosobo,<br>
-                                Jawa Tengah 56361
-                            </p>
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-search fa-3x text-secondary"></i>
+                            </div>
+                            <h4 class="fw-bold">5. Cek Status Surat</h4>
+                            <p class="text-muted">Periksa status pengajuan surat Anda untuk mengetahui apakah surat Anda sudah diterima.</p>
                         </div>
                     </div>
-    
-                    <div class="card bg-light text-dark mb-4">
-                        <div class="card-header">
-                            <h4>Jam Buka</h4>
+                    <div class="col-md-4">
+                        <div class="service-box p-4 rounded shadow-sm bg-white text-center">
+                            <div class="icon mb-3">
+                                <i class="fas fa-download fa-3x text-success"></i>
+                            </div>
+                            <h4 class="fw-bold">7. Unduh Surat</h4>
+                            <p class="text-muted">Jika surat Anda sudah diterima, Anda dapat mengunduh surat tersebut dari sistem.</p>
                         </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li>Rabu: 08.00–16.00</li>
-                                <li>Kamis: 08.00–16.00</li>
-                                <li>Jumat: 08.00–16.00</li>
-                                <li>Sabtu: Tutup</li>
-                                <li>Minggu: Tutup</li>
-                                <li>Senin: 08.00–16.00</li>
-                                <li>Selasa: 08.00–16.00</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-6">
-                    <h4 class="text-center">Lokasi Kami</h4>
-                    <div class="embed-responsive embed-responsive-16by9 mb-4">
-                        <iframe class="embed-responsive-item" 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.7404513188042!2d109.87654!3d-7.28263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6b66e10f5ff77d%3A0x24bcbb80b7c3d8ef!2sHVPM%2B49%20Selomerto%2C%20Kabupaten%20Wonosobo%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1618257045635!5m2!1sid!2sid" 
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-    
+        </section>
 
-    <!-- Bootstrap JS and Custom JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="{{ asset('assets/js/landing.js') }}"></script>
-</body>
-</html>
+
+                <!-- Optional: Add custom scroll on navbar effect -->
+                <script>
+                    // Add 'scroll-on' class to the navbar when scrolling down
+                    window.onscroll = function() {
+                        var navbar = document.getElementById("navbarResponsive");
+                        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                            navbar.classList.add("scroll-on");
+                        } else {
+                            navbar.classList.remove("scroll-on");
+                        }
+                    };
+                </script>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS and Custom JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <!-- Custom JS -->
+        <script src="{{ asset('assets/js/landing.js') }}"></script>
+
+    </body>
+
+    
+    

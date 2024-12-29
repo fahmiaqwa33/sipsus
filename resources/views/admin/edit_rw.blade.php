@@ -15,7 +15,7 @@
                     <input type="text" class="form-control" id="nama_rw" name="nama_rw" value="{{ $rw->nama_rw }}" required>
                 </div>
                 <div class="mb-3">
-                    <label for="rw" class="form-label">RT</label>
+                    <label for="rw" class="form-label">RW</label>
                     <input type="text" class="form-control" id="rw" name="rw" value="{{ $rw->rw }}" required>
                 </div>
                 <div class="mb-3">

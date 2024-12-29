@@ -87,4 +87,28 @@ class InformasiController extends Controller
         return view('admin.show_informasi', compact('informasi'));
     }
 
+    public function index2()
+    {
+        $informasi = Informasi::all(); // Sesuaikan dengan model dan query yang tepat
+        return view('rw.informasi', compact('informasi'));
+    }
+    public function show2($id)
+    {
+        $informasi = Informasi::findOrFail($id);
+        return view('rw.show_informasi', compact('informasi'));
+    }
+// informasi RT
+        public function index3() // Ganti 'index' dengan 'index3'
+        {
+            // Ambil semua data dari tabel 'informasi'
+            $informasi = Informasi::all();
+    
+            // Kirim data ke view
+            return view('rt.informasi', compact('informasi'));
+        }
+        public function show3($id)
+        {
+            $informasi = Informasi::findOrFail($id);
+            return view('rt.show_informasi', compact('informasi')); // Buat detail view jika diperlukan
+        }
 }

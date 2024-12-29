@@ -35,8 +35,11 @@
             </a>
             <div class="collapse" id="data-user">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="">Admin RT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">warga</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('rw.data_rt.index') }}">Admin RT</a>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('rw.data_warga.index') }}">Warga</a>
+                        </li>                        
                 </ul>
             </div>
         </li>
@@ -50,16 +53,20 @@
             </a>
             <div class="collapse" id="data-surat">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="">surat masuk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">surat terverivikasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">surat ditolak</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('surat.masuk.rw.index2') }}">Surat Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('surat.terverifikasi') }}">Surat Terverifikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('surat.ditolak') }}">Surat Ditolak</a>
+                    </li>
                 </ul>
-        
-
-
+    
         <!-- Informasi -->
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ route('rw.informasi.index') }}">
                 <i class="mdi mdi-information menu-icon"></i>
                 <span class="menu-title">Informasi</span>
             </a>
@@ -68,8 +75,8 @@
         <!-- Setting -->
         <li class="nav-item">
             <a class="nav-link" href="">
-                <i class="mdi mdi-logout menu-icon"></i>
-                <span class="menu-title">Settings</span>
+                <i class="mdi mdi-account-circle menu-icon"></i>
+                <span class="menu-title">profil</span>
             </a>
         </li>
         <li class="nav-item">

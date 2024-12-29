@@ -2,7 +2,7 @@
     <ul class="nav">
         <!-- Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <i class="mdi mdi-home menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
@@ -10,11 +10,12 @@
         
         <!-- Ajukan Surat -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('ajukan-surat.create') }}">
                 <i class="mdi mdi-send menu-icon"></i>
                 <span class="menu-title">Ajukan Surat</span>
             </a>
-        </li>       
+        </li>
+            
         
         <!-- Status Pengajuan -->
         <li class="nav-item">

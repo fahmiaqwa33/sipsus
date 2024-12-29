@@ -30,7 +30,7 @@ class User extends Authenticatable
     // Relasi ke RT
     public function rt()
     {
-        return $this->belongsTo(RT::class);
+        return $this->belongsTo(RT::class, 'rt_id');
     }
 
     // Tambahkan metode lain jika perlu

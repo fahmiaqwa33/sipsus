@@ -9,14 +9,12 @@ class DataRW extends Model
 {
     use HasFactory;
 
-    // Tentukan nama tabel secara eksplisit jika nama tabel di database berbeda dari plural model
     protected $table = 'data_rw';
+    
+    protected $fillable = ['nama_rw', 'rw', 'no_hp', 'email'];
 
-    // Atribut yang diizinkan untuk diisi melalui mass assignment
-    protected $fillable = [
-        'nama_rw',
-        'rw',
-        'no_hp',
-        'email',
-    ];
+    public function rts()
+    {
+        return $this->hasMany(RT::class, 'rw_id');
+    }
 }

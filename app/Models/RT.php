@@ -26,6 +26,6 @@ class RT extends Model
     // Relasi ke User
     public function users()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(User::class, 'rt_id');
     }
 }

@@ -1,39 +1,52 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href=".....">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <i class="mdi mdi-view-dashboard menu-icon"></i>
-                <span class="menu-title">Dashboard RW</span>
+                <span class="menu-title">Dashboard RT</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href=".....">
+            <a class="nav-link" href="{{ route('rt.data_warga.index') }}">
                 <i class="mdi mdi-account-group menu-icon"></i>
-                <span class="menu-title">Data RT</span>
+                <span class="menu-title">Data warga</span>
             </a>
         </li>
+        <!---surat----->
         <li class="nav-item">
-            <a class="nav-link" href=".....">
-                <i class="mdi mdi-file-check menu-icon"></i>
-                <span class="menu-title">Verifikasi Surat</span>
+            <a class="nav-link" data-bs-toggle="collapse" href="#data-surat" aria-expanded="false" aria-controls="data-user">
+                <i class="mdi mdi-email-outline menu-icon"></i>
+                <span class="menu-title">Surat</span>
+                <i class="menu-arrow"></i>
             </a>
-        </li>
+            <div class="collapse" id="data-surat">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('surat.masuk') }}">surat masuk</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('surat.terverifikasi') }}">Surat Terverifikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('surat.ditolak') }}">Surat Ditolak</a>
+                    </li>
+                </ul>
+
         <li class="nav-item">
-            <a class="nav-link" href=".....">
+            <a class="nav-link" href="#">
                 <i class="mdi mdi-file-chart menu-icon"></i>
-                <span class="menu-title">Laporan RW</span>
+                <span class="menu-title">Laporan RT</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href=".....">
-                <i class="mdi mdi-information-outline menu-icon"></i>
-                <span class="menu-title">Informasi RW</span>
+            <a class="nav-link" href="{{ route('rt.informasi.index') }}">
+               <i class="mdi mdi-information-outline menu-icon"></i>
+                <span class="menu-title">Informasi RT</span>
             </a>
         </li>
+        
         <li class="nav-item">
-            <a class="nav-link" href=".....">
-                <i class="mdi mdi-logout menu-icon"></i>
-                <span class="menu-title">Setting Akun</span>
+            <a class="nav-link" href="#">
+                <i class="mdi mdi-account-circle menu-icon"></i>
+                <span class="menu-title">Profil</span>
             </a>
         </li>
 

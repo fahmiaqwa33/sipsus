@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\RT;
 use App\Models\DataRW;
+use Illuminate\Support\Facades\Auth;
 
 class DataRTController extends Controller
 {
@@ -99,5 +100,24 @@ class DataRTController extends Controller
         $rt->delete();
 
         return redirect()->route('admin.data_rt.index')->with('success', 'Data RT berhasil dihapus.');
+    }
+
+// contoller untuk adminRW
+
+    public function index2() // Ganti nama method menjadi index2
+    {
+    // Ambil ID RT yang sedang login
+    $rtId = Auth::user()->rt_id; // Ambil rt_id dari pengguna yang sedang login
+
+    // Ambil data RT berdasarkan rt_id
+    $rt = RT::findOrFail($rtId);
+
+    // Ambil rw_id dari data RT
+    $rwId = $rt->rw_id;
+
+    // Ambil data RT yang memiliki relasi dengan RW yang sesuai
+    $dataRT = RT::where('rw_id', $rwId)->get();
+
+        return view('rw.data_rt', compact('dataRT'));
     }
 }

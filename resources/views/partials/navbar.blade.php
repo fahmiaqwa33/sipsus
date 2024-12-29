@@ -7,15 +7,19 @@
     </div>
     <div>
       <a class="navbar-brand brand-logo" href="{{ route('dashboard') }}">
-        <img src="{{ asset('assets/img/siyanto_logo.svg') }}" alt="logo" />
+        <img src="{{ asset('assets/img/siyantologo_V2.svg') }}" alt="logo" />
     </a>
     <a class="navbar-brand brand-logo-mini" href="{{ route('dashboard') }}">
-        <img src="{{ asset('assets/img/siyanto_logo_mini.svg') }}" alt="logo" />
+        <img src="{{ asset('assets/img/siyantologomini_v1.svg') }}" alt="logo" />
     </a>
     </div>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-top"> 
     <ul class="navbar-nav ms-auto">
+      <li class="nav-item fw-semibold d-none d-lg-block ms-0">
+        <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
+        <h3 class="welcome-sub-text">Your performance summary this week </h3>
+      </li>
       <li class="nav-item">
         <form class="search-form" action="#">
           <i class="icon-search"></i>

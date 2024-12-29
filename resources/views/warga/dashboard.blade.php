@@ -1,21 +1,21 @@
 @extends('layouts.wargaapp')
 
-@section('title', 'warga Dashboard')
+@section('title', 'Dashboard Warga')
 
 @section('content')
-
-<div class="page-header">
-    <h3 class="page-title">Warga Dashboard</h3>
-  </div>
-  
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Welcome, {{ auth()->user()->name }}</h4>
-          <p>Manage your content from here.</p>
-        </div>
+      <div class="col-lg-12">
+          <div class="card shadow-sm mt-4">
+              <div class="card-body">
+                  <h2 class="card-title">Selamat Datang, {{ auth()->user()->nama }}</h2>
+                  <p class="card-text">Silakan pilih menu di bawah ini untuk melanjutkan.</p>
+                  <div class="mt-4">
+                      <a href="{{ route('ajukan-surat.create') }}" class="btn btn-primary btn-lg">Ajukan Surat</a>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+</div>
 @endsection
